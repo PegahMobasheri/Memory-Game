@@ -35,7 +35,7 @@ A simple and fun **memory matching game** built with **HTML, CSS, TailwindCSS, a
 ## 🛠️ Built With
 - **HTML5**
 - **TailwindCSS**
-- **JavaScript (ES6+)**
+- **JavaScript**
 
   
 
