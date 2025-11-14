@@ -12,10 +12,8 @@ A simple and fun **memory matching game** built with **HTML, CSS, TailwindCSS, a
 ## 🖼️ Screenshots
 
 ### Screenshot 1
-![Screenshot 1] ()
+![Screenshot 1] (https://github.com/user-attachments/assets/706c7125-daba-4a7c-b8c6-a1003123b3e3)
 
-### Screenshot 2
-![Screenshot 2] ()
 
 ---
 
