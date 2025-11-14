@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lange="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <link rel="stylesheet" href="assets/stylesheet/main.css">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body class=" w-full min-h-dvh bg-[url(../img/background2.png)] bg-cover">
+    <div
+        class=" w-[70px] h-[70px] absolute top-[95px] -left-2.5  bg-[#ffed66] rounded-[10px] *:capitalize *:font-display *:text-[#fc504d] *:text-[18px]  ps-2 lg:w-24 lg:h-24 lg:*:text-[22px]">
+        <h4 class="w-full h-1/2 flex justify-center items-end">turns</h4>
+        <h5 id="turn-box" class="w-full h-1/2 flex justify-center items-start">0</h5>
+    </div>
+    <header class="w-full h-[150px] mt-5  lg:h-[200px] 2xl:container mx-auto">
+        <h1
+            class="w-full h-1/2 font-display uppercase flex items-center justify-center text-3xl md:text-4xl lg:text-5xl  text-[#ff5e5b] ">
+            memory game</h1>
+        <div class="w-full h-1/2 flex relative justify-center items-center">
+            <button
+                class="w-[125px] h-[50px] lg:w-[155px] lg:h-[60px] absolute rounded-[40px] bg-[#ff5e5b]"></button></button>
+            <button onclick="again()"
+                class="real w-[125px] h-[50px] text-[20px] lg:w-[155px] lg:h-[60px] absolute rounded-[40px] bg-[#ffed66] text-[#fc504d] capitalize font-display text-center  lg:text-[25px] translate-y-[-5px] -translate-x-0.5 transition-all hover:-translate-y-2 hover:translate-x-[-3px]">restart</button>
+        </div>
+    </header>
+    <!-- end header  -->
+    <main class="w-full h-[60dvh] md:h-[70dvh]  flex justify-center items-center relative 2xl:container mx-auto">
+        <div
+            class="w-[280px] h-[280px] md:w-[320px] md:h-80 lg:w-[400px] lg:h-[400px] rounded-[10px] translate-x-[5px] bg-[#ff5e5b] absolute">
+        </div>
+        <div
+            class="frame w-[280px] h-[280px] md:w-[320px] md:h-80 lg:w-[400px] lg:h-[400px] rounded-[10px] absolute -translate-y-2.5 translate-x-[-5px] bg-[#ffed66] flex flex-wrap pt-3">
+            <div
+                class="_row w-full h-1/5 justify-evenly *:w-1/5 *:h-full  *:bg-[#f78987b0]  *:rounded-[5px] flex *:flex *:justify-center *:items-center *:rotate-y-0 *:perspective-midrange  *:duration-500 ">
+                <div data-name="sofa" data-status="off"><i class="ri-sofa-fill _icon"></i></div>
+                <div data-name="rainbow" data-status="off"><i class="ri-rainbow-fill _icon"></i></div>
+                <div data-name="bike" data-status="off"><i class="ri-e-bike-fill _icon"></i></div>
+                <div data-name="drink" data-status="off"><i class="ri-drinks-fill _icon"></i></div>
+
+            </div>
+            <div
+                class="_row w-full h-1/5 justify-evenly *:w-1/5 *:h-full *:bg-[#f78987b0]  *:rounded-[5px] flex *:flex *:justify-center *:items-center *:rotate-y-0 *:perspective-midrange  *:duration-500 ">
+                <div data-name="mickey" data-status="off"><i class="ri-mickey-fill _icon"></i></div>
+                <div data-name="drink" data-status="off"><i class="ri-drinks-fill _icon"></i></div>
+                <div data-name="plant" data-status="off"><i class="ri-plant-fill _icon"></i></div>
+                <div data-name="eye" data-status="off"><i class="ri-eye-close-fill _icon"></i></div>
+
+            </div>
+            <div
+                class="_row w-full h-1/5 justify-evenly *:w-1/5 *:h-full  *:bg-[#f78987b0]  *:rounded-[5px] flex *:flex *:justify-center *:items-center *:rotate-y-0 *:perspective-midrange  *:duration-500 ">
+                <div data-name="rainbow" data-status="off"><i class="ri-rainbow-fill _icon"></i></div>
+                <div data-name="game" data-status="off"><i class="ri-game-fill _icon"></i></div>
+                <div data-name="sofa" data-status="off"><i class="ri-sofa-fill _icon"></i></div>
+                <div data-name="plant" data-status="off"><i class="ri-plant-fill _icon"></i></div>
+
+            </div>
+            <div
+                class="_row w-full h-1/5 justify-evenly *:w-1/5 *:h-full  *:bg-[#f78987b0] *:rounded-[5px] flex *:flex *:justify-center *:items-center *:rotate-y-0 *:perspective-midrange  *:duration-500 ">
+                <div data-name="eye" data-status="off"><i class="ri-eye-close-fill _icon"></i></div>
+                <div data-name="bike" data-status="off"><i class="ri-e-bike-fill _icon"></i></div>
+                <div data-name="mickey" data-status="off"><i class="ri-mickey-fill _icon"></i></div>
+                <div data-name="game" data-status="off"><i class="ri-game-fill _icon"></i></div>
+
+            </div>
+        </div>
+        <audio  src="assets/sounds/win.sound.mp3"></audio>
+
+    </main>
+    <footer class="w-full h-[150px] bg-[#ff5e5b] flex justify-center items-center lg:h-[200px] 2xl:container mx-auto">
+        <div class="w-60 h-30 flex lg:w-[500px] lg:h-40 lg:justify-center">
+            <figure class="w-1/2 h-full  ">
+                <img class="w-[110px] h-[110px] rounded-[20px] object-cover shado mx-auto lg:w-[140px] lg:h-[140px] " src="assets/img/metur.crop.jpeg" alt="">
+                <figcaption class="w-fit h-fit hidden lg:flex text-[#ffed66] font-display text-[18px] uppercase pt-3 mx-auto">pegah mobasheri</figcaption>
+            </figure>
+            <nav class="w-1/2 h-full">
+                <ul class=" w-full h-full **:text-[#ffed66] **:font-display **:text-[16px] **:capitalize lg:**:text-[20px] ">
+                    <li class="w-full h-1/4  ps-2 lg:ps-0 "><a href="https://www.instagram.com/pegahmobasherii"><i class="ri-instagram-fill mx-1.5"></i>instagram</a></li>
+                    <li class="w-full h-1/4 ps-2 lg:ps-0  "><a href="https://www.linkedin.com/in/pegah-mobasheri"><i class="ri-linkedin-box-fill mx-1.5"></i>linkedin</a><li>
+                    <li class="w-full h-1/4  ps-2 lg:ps-0 "><a href="https://github.com/PegahMobasheri"><i class="ri-github-fill mx-1.5"></i></a>github</li>
+                    <li class="w-full h-1/4  ps-2  lg:ps-0"><a href="www.pegah.mobasheri222@gmail.com"><i class="ri-mail-fill mx-1.5"></i>email</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+<script>
+    const cards = document.querySelectorAll('main>.frame>._row>div')
+    const _again = document.querySelector('header>div>.real')
+    const sound = document.querySelector('main>audio')
+    let flag = 1
+    let _click1 = null
+    let _click2 = null
+    cards.forEach(function (item) {
+        item.addEventListener('click', function () {
+
+            if (item.getAttribute('data-status') == 'off') {
+                if (flag % 2) {
+                    _click1 = item
+                    _click1.classList.add('target');
+                    _click1.setAttribute('data-status', 'on');
+                    // odd click 
+                } else {
+                    //  even click 
+                    _click2 = item
+                    _click2.classList.add('target');
+                    //  hala moghayese kon 
+                    setTimeout(() => {
+                        if (_click1.getAttribute('data-name') === _click2.getAttribute('data-name')) {
+                            _click1.style.backgroundColor = 'rgb(70, 142, 94)'
+                            _click2.style.backgroundColor = 'rgb(70, 142, 94)'
+                            _click2.setAttribute('data-status', 'on');
+                            let box = document.getElementById('turn-box');
+                            let num = Number(box.innerText);
+                            box.innerText = num + 1;
+                            sound.play();
+
+
+
+
+
+
+
+                        } else {
+                            _click1.classList.remove('target');
+                            _click2.classList.remove('target');
+                            _click1.setAttribute('data-status', 'off');
+                            _click2.setAttribute('data-status', 'off');
+
+
+
+                        }
+                    }, 700);
+
+
+
+                } flag++
+            }
+
+
+        })
+    })
+    function again() {
+        if (confirm('Are you sure you want the game to restart?')) {
+            location.reload()
+        }
+    }
+
+
+
+
+
+
+</script>
+
+</html>

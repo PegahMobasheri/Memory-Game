@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Coiny&display=swap");
+@import url(../fonts/remixicon.css);
+@import "tailwindcss";
+
+
+@theme {
+    --font-display : "Coiny", system-ui;
+}
+@layer utilities{
+    .shado{
+        box-shadow: 4px 4px 0px 0px #ffed66;
+    }
+    ._icon{
+        font-size: 35px;
+        color:#feffeb;
+        opacity: 0;
+      
+
+    }
+     .target{
+        background-color: rgb(48, 133, 156);
+        transform:perspective(800px) rotateY(180deg);
+        >*{
+            display: block;
+            opacity: 1;
+            transition: 0.3s ease-in 0.1s;
+            
+        }
+    }
+   
+    }
+   
+   
+
+@font-face{
+    font-family: "remixicon";
+    src: url(../fonts/remixicon.ttf) format("truetype");
+}
+
