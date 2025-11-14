@@ -5,7 +5,7 @@ A simple and fun **memory matching game** built with **HTML, CSS, TailwindCSS, a
 ---
 
 ## 🚀 Live Demo
-🔗 **Demo URL:** [ ]
+🔗 **Demo URL:** [https://pegahmobasheri.github.io/Memory-Game/]
 
 ---
 
