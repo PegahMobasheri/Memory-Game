@@ -12,7 +12,7 @@ A simple and fun **memory matching game** built with **HTML, CSS, TailwindCSS, a
 ## 🖼️ Screenshots
 
 ### Screenshot 1
-![Screenshot 1] (https://github.com/user-attachments/assets/706c7125-daba-4a7c-b8c6-a1003123b3e3)
+![Screenshot 1] (https://github.com/user-attachments/assets/c8eab284-9ef9-4444-89fd-e8b820437199)
 
 
 ---
